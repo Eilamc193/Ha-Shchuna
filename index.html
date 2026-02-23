@@ -25,6 +25,7 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
     line-height: 1.6;
+    overflow-x: hidden;
   }
 
   /* animated gradient orbs in background */
@@ -52,16 +53,31 @@
     position: relative; z-index: 1;
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 28px 56px;
+    padding: 0 20px 40px;
+  }
+
+  @media (min-width: 768px) {
+    .page {
+      padding: 0 28px 56px;
+    }
   }
 
   /* ── TOP BAR ── */
   .topbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 0 20px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0;
     border-bottom: 1px solid rgba(200,255,0,0.1);
+  }
+
+  @media (min-width: 768px) {
+    .topbar {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0 20px;
+    }
   }
 
   .brand {
@@ -155,9 +171,16 @@
   /* ── INSIGHT BLOCKS ── */
   .insights {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2px;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 768px) {
+    .insights {
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 56px;
+    }
   }
 
   .insight {
@@ -203,9 +226,16 @@
   /* ── THE CONCEPT ── */
   .concept-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 768px) {
+    .concept-grid {
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 56px;
+    }
   }
 
   .concept-card {
@@ -266,8 +296,15 @@
 
   .why-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .why-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
   }
 
   .why-item strong {
@@ -306,8 +343,14 @@
 
   .proof-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .proof-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   .proof-card {
@@ -350,9 +393,16 @@
   /* ── TEAM STRIP ── */
   .team-strip {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2px;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 768px) {
+    .team-strip {
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 56px;
+    }
   }
 
   .team-card {
@@ -392,11 +442,17 @@
   .raise-teaser {
     background: linear-gradient(135deg, #0A1F0A, #0C0C1A 60%);
     border: 1px solid rgba(200,255,0,0.25);
-    padding: 40px;
+    padding: 24px 20px;
     text-align: center;
     margin-bottom: 16px;
     position: relative;
     overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .raise-teaser {
+      padding: 40px;
+    }
   }
 
   .raise-teaser::before {
@@ -455,11 +511,22 @@
   /* ── FOOTER ── */
   .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 24px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
     background: var(--dark3);
     border-top: 2px solid var(--neon);
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 24px;
+      text-align: left;
+    }
   }
 
   .footer-cta {
@@ -471,10 +538,16 @@
   .footer-cta span { color: var(--neon); }
 
   .footer-contact {
-    text-align: right;
+    text-align: center;
     font-size: 13px;
     color: var(--muted);
     line-height: 2;
+  }
+
+  @media (min-width: 768px) {
+    .footer-contact {
+      text-align: right;
+    }
   }
   .footer-contact strong {
     color: var(--neon);
