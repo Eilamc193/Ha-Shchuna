@@ -53,7 +53,7 @@
     position: relative; z-index: 1;
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px 40px;
+    padding: 0 16px 32px;
   }
 
   @media (min-width: 768px) {
@@ -124,18 +124,32 @@
 
   /* ── HERO STATEMENT ── */
   .hero {
-    padding: 56px 0 48px;
+    padding: 32px 0 28px;
     text-align: center;
     position: relative;
   }
 
+  @media (min-width: 768px) {
+    .hero {
+      padding: 56px 0 48px;
+    }
+  }
+
   .hero-eyebrow {
     font-family: 'Space Mono', monospace;
-    font-size: 18px;
+    font-size: 14px;
     color: var(--pink);
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 768px) {
+    .hero-eyebrow {
+      font-size: 18px;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
   }
 
   .hero h2 {
@@ -151,12 +165,20 @@
   .hero h2 .accent2 { color: var(--pink); }
 
   .hero-sub {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--muted);
     max-width: 560px;
-    margin: 0 auto 36px;
-    line-height: 1.7;
+    margin: 0 auto 24px;
+    line-height: 1.6;
     font-weight: 300;
+  }
+
+  @media (min-width: 768px) {
+    .hero-sub {
+      font-size: 18px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
   }
 
   .hero-sub strong { color: var(--white); font-weight: 500; }
@@ -165,7 +187,13 @@
   .divider {
     width: 60px; height: 2px;
     background: var(--neon);
-    margin: 0 auto 48px;
+    margin: 0 auto 32px;
+  }
+
+  @media (min-width: 768px) {
+    .divider {
+      margin: 0 auto 48px;
+    }
   }
 
   /* ── INSIGHT BLOCKS ── */
@@ -185,9 +213,15 @@
 
   .insight {
     background: var(--card);
-    padding: 28px 24px;
+    padding: 20px 16px;
     position: relative;
     overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .insight {
+      padding: 28px 24px;
+    }
   }
 
   .insight::before {
@@ -200,11 +234,17 @@
 
   .insight-num {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 52px;
+    font-size: 42px;
     color: var(--neon);
     line-height: 1;
     margin-bottom: 4px;
     letter-spacing: 1px;
+  }
+
+  @media (min-width: 768px) {
+    .insight-num {
+      font-size: 52px;
+    }
   }
 
   .insight-label {
@@ -217,10 +257,17 @@
   }
 
   .insight p {
-    font-size: 18px;
+    font-size: 15px;
     color: var(--muted);
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: 300;
+  }
+
+  @media (min-width: 768px) {
+    .insight p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
   }
 
   /* ── THE CONCEPT ── */
@@ -241,15 +288,28 @@
   .concept-card {
     background: var(--card);
     border: 1px solid rgba(255,255,255,0.05);
-    padding: 28px;
+    padding: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .concept-card {
+      padding: 28px;
+    }
   }
 
   .concept-card h3 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 1px;
     color: var(--neon);
-    margin-bottom: 14px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .concept-card h3 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
   }
 
   .concept-card ul {
@@ -258,12 +318,21 @@
 
   .concept-card li {
     display: flex;
-    gap: 10px;
-    padding: 7px 0;
+    gap: 8px;
+    padding: 6px 0;
     border-bottom: 1px solid rgba(255,255,255,0.04);
-    font-size: 18px;
+    font-size: 15px;
     color: var(--muted);
-    line-height: 1.5;
+    line-height: 1.4;
+  }
+
+  @media (min-width: 768px) {
+    .concept-card li {
+      gap: 10px;
+      padding: 7px 0;
+      font-size: 18px;
+      line-height: 1.5;
+    }
   }
 
   .concept-card li:last-child { border-bottom: none; }
@@ -282,8 +351,15 @@
   .why-now {
     background: var(--dark3);
     border-left: 3px solid var(--neon);
-    padding: 28px 32px;
-    margin-bottom: 56px;
+    padding: 20px 16px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: 768px) {
+    .why-now {
+      padding: 28px 32px;
+      margin-bottom: 56px;
+    }
   }
 
   .why-now h3 {
@@ -316,8 +392,15 @@
 
   .why-item p {
     color: var(--muted);
-    font-size: 13px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  @media (min-width: 768px) {
+    .why-item p {
+      font-size: 13px;
+      line-height: 1.5;
+    }
   }
 
   /* ── GLOBAL PROOF ── */
@@ -442,7 +525,7 @@
   .raise-teaser {
     background: linear-gradient(135deg, #0A1F0A, #0C0C1A 60%);
     border: 1px solid rgba(200,255,0,0.25);
-    padding: 24px 20px;
+    padding: 24px 16px;
     text-align: center;
     margin-bottom: 16px;
     position: relative;
@@ -474,22 +557,38 @@
 
   .raise-headline {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 48px;
-    letter-spacing: 2px;
+    font-size: 36px;
+    letter-spacing: 1px;
     color: var(--white);
-    line-height: 1;
+    line-height: 1.1;
     margin-bottom: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .raise-headline {
+      font-size: 48px;
+      letter-spacing: 2px;
+      line-height: 1;
+    }
   }
 
   .raise-headline span { color: var(--neon); }
 
   .raise-sub {
-    font-size: 18px;
+    font-size: 15px;
     color: var(--muted);
     max-width: 480px;
-    margin: 0 auto 28px;
+    margin: 0 auto 20px;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 768px) {
+    .raise-sub {
+      font-size: 18px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+    }
   }
 
   .raise-sub strong { color: var(--white); }
@@ -497,13 +596,24 @@
   .nda-note {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     background: rgba(200,255,0,0.06);
     border: 1px solid rgba(200,255,0,0.2);
     color: var(--muted);
-    font-size: 13px;
-    padding: 10px 20px;
+    font-size: 11px;
+    padding: 8px 12px;
     border-radius: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    .nda-note {
+      gap: 8px;
+      font-size: 13px;
+      padding: 10px 20px;
+      flex-wrap: nowrap;
+    }
   }
 
   .nda-note strong { color: var(--neon); }
